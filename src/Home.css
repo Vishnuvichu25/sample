@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box; 
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #202020; 
+    padding: 15px 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+.links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0; 
+}
+.links li {
+    color: #F8F8F8; 
+    font-size: 14px; 
+    text-transform: uppercase;
+    padding: 5px; 
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.links li:hover {
+    color: #5DD62C; 
+    text-shadow: 0 0 8px rgba(93, 214, 44, 0.7); 
+}
+.G-grid{
+    margin-top: 120px;
+    display: grid;
+    gap: 40px;
+    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.G-card{
+    cursor: pointer;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.G-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+.game-image {
+    width: 80%;
+    border-radius: 15px;
+    display: block; 
+}
+
+.game-title {
+    color: #DAF1DE; 
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+}
+.container-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+   
+}
+.modal-items{
+ width: 400px;
+    background: #0B2B26;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000;
+}
+.modal-dis{
+color: #8EB69B;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+.modal-title{
+    color: #DAF1DE;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.8em;
+}

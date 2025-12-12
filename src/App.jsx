@@ -1,10 +1,10 @@
 import React from 'react'
 import Home from './Home'
-import Mking from './Firsy'
+// import Mking from './Firsy'
 const App = () => {
   return (
     <div>
-      <Mking/>
+      {/* <Mking/> */}
       <Home/>
     </div>
   )
