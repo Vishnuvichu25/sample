@@ -156,7 +156,20 @@ const Home = () => {
           </div>
         </div>
       )}
+      <label className="peer ...">
+  <input type="checkbox" checked />
+</label>
+<button className="hidden transition-all not-peer-has-checked:opacity-0 peer-has-checked:block ...">
+  I hide
+</button>
+<label className="peer ...">
+  <input type="checkbox" checked />
+</label>
+<button className="hidden transition-all transition-discrete not-peer-has-checked:opacity-0 peer-has-checked:block ...">
+  I fade out
+</button>
     </div>
+    
   );
 }
 export default Home
